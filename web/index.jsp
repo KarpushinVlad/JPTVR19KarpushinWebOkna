@@ -1,26 +1,21 @@
-<%-- 
-    Document   : page1
-    Created on : Nov 25, 2020, 10:14:04 AM
-    Author     : Melnikov
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Наша библиотека</title>
+    <title>Пиццерия</title>
   </head>
   <body>
-    <h1>Библиотека JPTVR19</h1>
+    <h1>Пиццерия JPTVR19SoonvaldWebPizzeria</h1>
     <p>${info}</p>
     <br>
-    <a href="addBook">Добавить книгу</a><br>
-    <a href="addReader">Добавить читателя</a><br>
-    <a href="listBooks">Список книг</a><br>
-    <a href="listReaders">Список читателей</a><br>
-    <a href="takeOnBookForm">Выдать книгу</a><br>
-    <a href="returnBookForm">Вернуть книгу</a><br>
+    <a href="addBook">Добавить пиццу</a><br>
+    <a href="addReader">Добавить покупателя</a><br>
+    <a href="listBooks">Список пицц</a><br>
+    <a href="listReaders">Список покупателей</a><br>
+    <a href="takeOnBookForm">Купить пиццу</a><br>
     
   </body>
 </html>

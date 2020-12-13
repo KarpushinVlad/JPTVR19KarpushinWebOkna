@@ -10,14 +10,11 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-/**
- *
- * @author jvm
- */
+
 @Stateless
 public class ReaderFacade extends AbstractFacade<Reader> {
 
-    @PersistenceContext(unitName = "JPTVR19WebLibraryPU")
+    @PersistenceContext(unitName = "JPTVR19SoonvaldWebPizzeriaPU")
     private EntityManager em;
 
     @Override

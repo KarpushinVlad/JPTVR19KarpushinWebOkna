@@ -16,10 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 
-/**
- *
- * @author Melnikov
- */
+
 @Entity
 public class History implements Serializable{
     @Id
