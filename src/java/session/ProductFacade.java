@@ -5,14 +5,17 @@
  */
 package session;
 
-import entity.Book;
+import entity.Product;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-
+/**
+ *
+ * @author Sveta
+ */
 @Stateless
-public class BookFacade extends AbstractFacade<Book> {
+public class ProductFacade extends AbstractFacade<Product> {
 
     @PersistenceContext(unitName = "JPTVR19SoonvaldWebPizzeriaPU")
     private EntityManager em;
@@ -22,8 +25,8 @@ public class BookFacade extends AbstractFacade<Book> {
         return em;
     }
 
-    public BookFacade() {
-        super(Book.class);
+    public ProductFacade() {
+        super(Product.class);
     }
     
 }

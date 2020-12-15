@@ -1,19 +1,20 @@
 
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Список имеющихся пицц</title>
+        <title>Список покупателей</title>
     </head>
     <body>
-        <h1>Список имеющихся пицц</h1>
-        <ol>
-            <c:forEach var="book" items="${listBooks}">
-                <li>"${book.name}". ${book.author}. ${book.publishedYear}</li>
+        <h1>Список покупателей</h1>
+         <ul>
+        <c:forEach var="buyer" items="${listBuyers}"> 
+            <li>${buyer.name}. ${buyer.lastname}. ${buyer.email}. ${buyer.money}</li>
             </c:forEach>
-        </ol>
+
+    </ul>
+
     </body>
 </html>

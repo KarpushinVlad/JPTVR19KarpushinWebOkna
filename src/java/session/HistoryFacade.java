@@ -11,7 +11,10 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-
+/**
+ *
+ * @author Sveta
+ */
 @Stateless
 public class HistoryFacade extends AbstractFacade<History> {
 
@@ -27,11 +30,11 @@ public class HistoryFacade extends AbstractFacade<History> {
         super(History.class);
     }
 
-    public List<History> findReadingBooks() {
-        try {
-            return em.createQuery("SELECT h FROM History h WHERE h.returnDate = NULL")
-                    .getResultList();
-        } catch (Exception e) {
+    public List<History> findBuyProduct() {
+       try{
+            return em.createQuery("SELECT history FROM History history WHERE history.takeOn != null")
+                        .getResultList();
+            } catch (Exception e){
             return null;
         }
     }
